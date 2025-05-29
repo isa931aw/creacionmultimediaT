@@ -1,0 +1,96 @@
+<HTML lang=es>
+
+<head>
+ <title>practica de tabla</title>
+</head>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tabla con Imágenes</title>
+</head>
+<body alight="center"> 
+
+<style>
+body {background-color:#DFE982}
+</style>
+</head>
+
+<body>
+</html>
+
+</style>
+
+    <font size=8 color=#000000 align=center><B><h1><style="text-align: center;">GATOS DE INTERNET </h1> </B>
+        
+
+        <text><font-size=4 color=#000000>Los gatos siempre han sido uno de los elementos mas reconocidos a lo largo de la historia del internet, hasta el punto de que hoy en dia siguen siendo tan relevantes como en sus inicios, los ultimos mas virales en  los foros de internte, sobre todo en la plataforma de TIKTOK, son:
+
+
+    <table width="100%" border="4" color=#D23669  >
+        <tr>
+            <td width=33%><img src=https://i.ytimg.com/vi/1Gq-fcUay9M/hq2.jpg?sqp=-oaymwEoCOADEOgC8quKqQMcGADwAQH4Ac4FgAKACooCDAgAEAEYRiBKKHIwDw==&rs=AOn4CLAr5uMVPArGeRIUtPfadrfSp1Wvjg  width="90%"  align=center></td>
+            <td width=33%><img src=https://i.ytimg.com/vi/tn6kRWxK628/hq2.jpg width="90%"  align=center></td>
+            <td width=33%><img src=https://th.bing.com/th/id/OIP.blx-mgsS3XvGZZDVrVODygHaGS?rs=1&pid=ImgDetMain width="90%"  align=center></td>
+        </tr>
+        <tr>
+            <td><font size=8 color=#000000 align=center><h1> WIWIWI CAT </h1></td>
+            <td><font size=8 color=#000000 align=center><h1> UIA CAT </h1></td>
+            <td><font size=8 color=#000000 align=center><h1> HAPPY CAT </h1> </td>
+        </tr>
+    </table>
+
+ <table width="50%" align=center>
+   <tr align=center>
+        
+     <td colspan="6">
+     <video id="mivideo" width="100%" align=center controls>
+        
+      <source src="gato.mp4" type="video/mp4">
+    
+</video>
+       </td>
+     </tr>
+     <tr align=center>
+        
+         <td><button onclick="playPause()"><img src=https://www.pngplay.com/wp-content/uploads/8/Pause-Button-Transparent-Images.png width=50></button></td>
+        
+         <td><button onclick="seek(-10)"><img src=https://th.bing.com/th/id/OIP.eAvXA700o6eGbbTuvvViKgHaHa?w=512&h=512&rs=1&pid=ImgDetMain width=50></button></td>
+        
+         <td><button onclick="seek(10)"><img src=https://th.bing.com/th/id/OIP.f1HU_QFye-pHJPJiLpJgswHaHa?rs=1&pid=ImgDetMain width=50></button></td>
+        
+         <td><button onclick="muteUnmute()"><img src=https://png.pngtree.com/png-vector/20220401/ourlarge/pngtree-silent-symbol-silhouette-background-vector-png-image_35839950.png width=50></button></td>
+        
+          <td><button onclick="setVolume(0.5)"><img src= https://cdn-icons-png.flaticon.com/512/109/109186.png width=50></button></td> 
+        
+          <td><button onclick="setVolume(1)"><img src= https://th.bing.com/th/id/OIP.f4DSIxdwWhFDrYTbY68bTwAAAA?rs=1&pid=ImgDetMain width=50></button></td>
+           
+     </tr>
+         </table>
+        
+         <script>
+        var video = document.getElementById("mivideo");
+
+        function playPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function seek(seconds) {
+            video.currentTime += seconds;
+        }
+
+        function setVolume(volume) {
+            video.volume = volume;
+        }
+
+        function muteUnmute() {
+            video.muted = !video.muted;
+        }
+    </script>
+         
+</body>
+</html>
